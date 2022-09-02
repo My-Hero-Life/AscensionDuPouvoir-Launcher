@@ -3,15 +3,22 @@ const logger = require('./loggerutil')('%c[DiscordWrapper]', 'color: #7289da; fo
 
 const {Client} = require('discord-rpc-patch')
 
+
+const user_text = document.getElementById('user_text')
+
 let client
 let activity
 
 exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting for Client..'){
     client = new Client({ transport: 'ipc' })
 
+
     activity = {
         details: initialDetails,
-        state: 'Server: ' + servSettings.shortId,
+        state: `${user_text.innerHTML}`,
+        buttons: [{ label: "✍️ Discord",
+         url: "https://discord.gg/VybHNEYF"}
+        ],
         largeImageKey: servSettings.largeImageKey,
         largeImageText: servSettings.largeImageText,
         smallImageKey: genSettings.smallImageKey,
@@ -32,6 +39,11 @@ exports.initRPC = function(genSettings, servSettings, initialDetails = 'Waiting 
             logger.log('Unable to initialize Discord Rich Presence: ' + error.message, error)
         }
     })
+}
+
+exports.resetTime = function(){
+    activity.startTimestamp = new Date().getTime()
+    client.setActivity(activity)
 }
 
 exports.updateDetails = function(details){
