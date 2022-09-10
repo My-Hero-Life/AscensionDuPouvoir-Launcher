@@ -9,7 +9,7 @@
 
 @font-face {
     font-family: 'Avenir Book';
-    src: url('../fonts/Avenir-Book.ttf');
+    src: url('../fonts/Futura-Display-BQ-Regular.ttf');
 }
 
 @font-face {
@@ -20,6 +20,11 @@
 @font-face {
     font-family: 'Ringbearer';
     src: url('../fonts/Ringbearer.ttf');
+}
+
+@font-face {
+    font-family: 'Future Display';
+    src: url('../fonts/Futura-Display-BQ-Regular.ttf');
 }
 
 /*******************************************************************************
