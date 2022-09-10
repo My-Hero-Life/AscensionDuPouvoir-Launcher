@@ -2855,19 +2855,17 @@ input:checked + .toggleSwitchSlider:before {
 
 /* Logo image. */
 #image_seal {
-    height: 70px;
+    height: 250px;
     width: auto;
     position: relative;
-    border: 2px solid white;
-    box-sizing: border-box;
     border-radius: 50%;
 }
 
 /* Logo container styles. */
 #image_seal_container {
     position: relative;
-    height: 70px;
-    width: 70px;
+    height: 300px;
+    width: 140px;
     border-radius: 50%;
     margin-top: 50px;
 }
