@@ -1,13 +1,13 @@
 {
-  "name": "myherolife-launcher",
+  "name": "ascensiondupouvoir-launcher",
   "version": "1.9.0",
-  "productName": "My Hero Life Launcher",
+  "productName": "Ascension Du Pouvoir Launcher",
   "description": "Modded Minecraft Launcher",
   "author": "Daniel Scalzi (https://github.com/dscalzi/)/SoraxDubbing",
   "license": "UNLICENSED",
-  "homepage": "https://github.com/My-Hero-Life/MyHeroLife-Launcher",
+  "homepage": "https://github.com/My-Hero-Life/AscensionDuPouvoir-Launcher",
   "bugs": {
-    "url": "https://github.com/My-Hero-Life/MyHeroLife-Launcher/issues"
+    "url": "https://github.com/My-Hero-Life/AscensionDuPouvoir-Launcher/issues"
   },
   "private": true,
   "main": "index.js",
@@ -48,6 +48,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/My-Hero-Life/MyHeroLife-Launcher.git"
+    "url": "git+https://github.com/My-Hero-Life/AscensionDuPouvoir-Launcher.git"
   }
 }
